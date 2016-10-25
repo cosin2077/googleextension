@@ -1,0 +1,11 @@
+{  
+  "name": "mycrx",  
+  "version": "0.1",  
+  "manifest_version": 2,
+  "description": "test crx",  
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "Mycrx",
+    "default_popup": "popup.html"
+  }  
+} 
