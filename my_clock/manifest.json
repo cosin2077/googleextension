@@ -1,0 +1,11 @@
+{  
+  "name": "conan clock",  
+  "version": "1.0",  
+  "manifest_version": 2,
+  "description": "show time",  
+  "browser_action": {  
+    "default_icon": "icon.png" ,
+    "default_title": "clock",
+    "default_popup": "popup.html"
+  }  
+} 
