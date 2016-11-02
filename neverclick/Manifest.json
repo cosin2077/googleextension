@@ -1,0 +1,12 @@
+{
+	"manifest_version":2,
+	"name":"neverclick search button",
+	"version":"1.0",
+	"description":"let you never click search button",
+	"content_scripts":[
+		{
+			"matches":["*://www.baidu.com/"],
+			"js":["js/cannot_touch.js"]
+		}
+	]
+}
