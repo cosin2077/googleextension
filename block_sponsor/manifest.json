@@ -1,0 +1,37 @@
+{  
+  "name": "屏蔽广告",  
+  "version": "1.0",  
+  "manifest_version": 2,
+  "description": "屏蔽广告",
+  "icons": {
+        "16": "x.png",
+        "48": "x.png",
+        "128": "x.png"
+    },
+  "content_scripts": [
+      {
+          "matches": ["*://www.liaoxuefeng.com/*"],
+          "css": [],
+          "js": ["options.js"]
+      },
+      {
+      	"matches": ["*://mail.163.com/"],
+      	"js":["options1.js"]
+      }
+  ],  
+  "browser_action": {  
+    "default_icon": "x.png" ,
+    "default_title": "屏蔽广告",
+    "default_popup": ""
+  },
+  "background": {
+        "scripts": [
+            "options.js"
+        ]
+    },
+  "permissions": [
+        "contextMenus",
+        "*://www.liaoxuefeng.com/*",
+        "*://btcherry.info/"
+    ]  
+} 
